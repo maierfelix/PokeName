@@ -1,4 +1,5 @@
 var pkmn = null;
+var plugin = "../";
 
 function expect(truth) {
   if (!truth) {
@@ -8,21 +9,21 @@ function expect(truth) {
 
 /** TEST SUPPORTED LANGUAGES */
 
-pkmn = require("pokename")("de");
+pkmn = require(plugin)("de");
 expect(pkmn.getPokemonNameById(1) === "Bisasam");
 
-pkmn = require("pokename")("en");
+pkmn = require(plugin)("en");
 expect(pkmn.getPokemonNameById(1) === "Bulbasaur");
 
-pkmn = require("pokename")("fr");
+pkmn = require(plugin)("fr");
 expect(pkmn.getPokemonNameById(1) === "Bulbizarre");
 
-pkmn = require("pokename")("ru");
+pkmn = require(plugin)("ru");
 expect(pkmn.getPokemonNameById(1) === "Бульбазавр");
 
-pkmn = require("pokename")("de");
+pkmn = require(plugin)("de");
 /** FOOL TESTS */
-var pkmn2 = require("pokename")("en");
+var pkmn2 = require(plugin)("en");
 
 // Different instances
 expect(
@@ -31,7 +32,7 @@ expect(
 );
 
 // Auto switch to en
-expect(require("pokename")().getPokemonNameById(1) === "Bulbasaur");
+expect(require(plugin)().getPokemonNameById(1) === "Bulbasaur");
 
 // High id pkmn
 expect(pkmn.getPokemonNameById(721) === "Volcanion");
