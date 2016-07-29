@@ -1,5 +1,11 @@
 # PokéName <a href="https://travis-ci.org/maierfelix/PokeName"><img src="https://img.shields.io/travis/maierfelix/PokeName/master.svg?style=flat-square" alt="Build Status" /></a> <a href="https://www.npmjs.com/package/pokename"><img src="https://img.shields.io/npm/v/pokename.svg?style=flat-square" alt="NPM Version" /></a>
 Fiddle with Pokémon names in different languages
+## Languages
+  - German
+  - English
+  - French
+  - Russian
+
 ## Install
 
 ```
