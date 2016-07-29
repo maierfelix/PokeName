@@ -1,0 +1,26 @@
+{
+  "name": "pokename",
+  "version": "0.1.0",
+  "description": "Pokémon names",
+  "license": "MIT",
+  "repository": "https://github.com/maierfelix/pokename",
+  "author": {
+    "name": "Felix Maier",
+    "email": "maier.felix96@gmail.com"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "keywords": [
+    "pokemon",
+    "names",
+    "words",
+    "list",
+    "random",
+    "pokemongo"
+  ],
+  "dependencies": {},
+  "scripts": {
+    "test": "node test/index"
+  }
+}
