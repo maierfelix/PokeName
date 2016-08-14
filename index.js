@@ -74,7 +74,7 @@ module.exports = function(name) {
   function getPokemonIdByName(name) {
 
     var ii = 0;
-    var length = 0;
+    var length = Object.keys(PKMN_TABLE).length;
 
     for (; ii < length; ++ii) {
       if (PKMN_TABLE[ii] === name) return (ii);
