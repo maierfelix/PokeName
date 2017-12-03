@@ -73,7 +73,7 @@ module.exports = function(name) {
    */
   function getPokemonIdByName(name) {
 
-    var ii = 0;
+    var ii = 1;
     var length = Object.keys(PKMN_TABLE).length;
 
     for (; ii < length; ++ii) {
@@ -83,6 +83,19 @@ module.exports = function(name) {
     return (0);
 
   };
+
+
+  function getPokemonIdByNameIgnoreCase(name) {
+
+    var ii = 1;
+    var length = Object.keys(PKMN_TABLE).length;
+ 
+     for (; ii < length; ++ii) {
+       if (PKMN_TABLE[ii].toLowerCase() === name.toLowerCase()) return (ii);
+     };
+ 
+     return (0);
+  }
 
   /**
    * @return {Number}
@@ -110,7 +123,8 @@ module.exports = function(name) {
     getPokemonNameById: getPokemonNameById,
     getPokemonIdByName: getPokemonIdByName,
     getRandomPokemonName: getRandomPokemonName,
-    getRandomPokemonId: getRandomPokemonId
+    getRandomPokemonId: getRandomPokemonId,
+    getPokemonIdByNameIgnoreCase: getPokemonIdByNameIgnoreCase
   };
 
 };

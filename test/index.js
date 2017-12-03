@@ -48,3 +48,10 @@ expect(typeof randId === "number" && randId >= 1 && randId <= 721);
 // Random pkmn name
 var randName = pkmn.getRandomPokemonName();
 expect(typeof randName === "string");
+
+// Ignore Casing
+expect(pkmn2.getPokemonIdByName("Bulbasaur") === 1);
+expect(pkmn2.getPokemonIdByName("bulbasaur") === 0);
+expect(pkmn2.getPokemonIdByNameIgnoreCase("Bulbasaur") === 1);
+expect(pkmn2.getPokemonIdByNameIgnoreCase("bulbasaur") === 1);
+
